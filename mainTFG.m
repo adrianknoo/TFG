@@ -12,5 +12,5 @@ close all
 [lat_limit,lon_limit,mapData,Coordenadas_Ast_Cant,Ubicacion]=Asturias_Cantabria;
 
 %% Meteorología: %%
-[TEMPERATURAS,PRECIPITACIONES,VIENTOS,Tmax_anual,Mes_Tmax,Year,Mes,Tref,...
+[DATOS_METEO,Tmax_anual,Mes_Tmax,Year,Mes,Tref,...
     P_suma_anual,P_media_anual,Direccion,Vel_media,Racha,Dia_lluvia,Mes_lluvia]=Meteorologia;
