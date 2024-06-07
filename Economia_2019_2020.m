@@ -23,10 +23,10 @@ function [DATOS_Eco,Prevencion_2019,Extincion_2019,Prevencion_2020,Extincion_202
     xticks(x);
     xticklabels(Comunidades);
     xtickangle(45);
-    ylabel('Capital [€]','FontSize',16);
-    title('Prevención de Incendios (2019 vs 2020)','FontSize',14);
-    legend('Capital invertido en prevención de incendios en 2019', 'Capital invertido en prevención de incendios en 2020', 'Location', 'northwest','FontSize',12);
-    set(gca, 'FontSize', 12);
+    set(gca, 'FontSize',12,'TickLabelInterpreter', 'latex')
+    ylabel('Capital [€]','FontSize',16, 'Interpreter', 'latex');
+    title('Prevenci\''on de Incendios (2019 vs 2020)', 'FontSize', 20, 'Interpreter', 'latex');
+    legend('Capital invertido en prevenci\''on de incendios en 2019', 'Capital invertido en prevenci\''on de incendios en 2020', 'Location', 'northwest', 'FontSize', 12, 'Interpreter', 'latex');
 
 % Subplot derecho
     subplot(1,2,2);
@@ -38,8 +38,8 @@ function [DATOS_Eco,Prevencion_2019,Extincion_2019,Prevencion_2020,Extincion_202
     xticks(x);
     xticklabels(Comunidades);
     xtickangle(45);
-    ylabel('Capital [€]','FontSize',16);
-    title('Extinción de Incendios (2019 vs 2020)','FontSize',14);
-    legend('Capital invertido en extinción de incendios en 2019', 'Capital invertido en extinción de incendios en 2020', 'Location', 'northwest','FontSize',12);
-    set(gca, 'FontSize', 12);
+    set(gca, 'FontSize',12,'TickLabelInterpreter', 'latex')
+    ylabel('Capital [€]','FontSize',16, 'Interpreter', 'latex');
+    title('Extinci\''on de Incendios (2019 vs 2020)', 'FontSize', 20, 'Interpreter', 'latex');
+    legend('Capital invertido en extinci\''on de incendios en 2019', 'Capital invertido en extinci\''on de incendios en 2020', 'Location', 'northwest', 'FontSize', 12, 'Interpreter', 'latex');
 end

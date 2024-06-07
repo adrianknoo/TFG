@@ -12,5 +12,11 @@ close all
 [lat_limit,lon_limit,mapData,Coordenadas_Ast_Cant,Ubicacion]=Asturias_Cantabria;
 
 %% Meteorología: %%
-[DATOS_METEO,Tmax_anual,Mes_Tmax,Year,Mes,Tref,...
-    P_suma_anual,P_media_anual,Direccion,Vel_media,Racha,Dia_lluvia,Mes_lluvia]=Meteorologia;
+[DATOS_METEO,Tmax_anual,Year,Mes,Tref,...
+    P_suma_anual,P_media_anual,Direccion,Vel_media,Racha,Dia_lluvia,Mes_lluvia,Mes_T]=Meteorologia;
+
+%% Diseño: %%
+[D,UCW]=Diseno;
+
+%% Presupuesto: %%
+[PRESUPUESTO_DATOS,Grupo,Subgrupos,Costes_Totales,Pintura,Pintura_Blanca,Pintura_Amarilla,Terreno,Edificaciones,Equipamiento,Licencias]=Presupuesto;
